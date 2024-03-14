@@ -15,7 +15,4 @@ def canJump(nums) -> bool:
             
                   
             
-                  
-
-print(canJump([3,1,2,0,4,1]
-))
+print(canJump([3,1,2,0,4,1]))
