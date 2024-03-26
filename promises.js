@@ -1,0 +1,11 @@
+var addTwoPromises = async function(promise1, promise2) {
+    var [value1, value2] = await Promise.all([promise1, promise2]);
+    
+    return value1 + value2;
+};
+
+
+promise1 = new Promise(resolve => setTimeout(() => resolve(10), 20)), 
+promise2 = new Promise(resolve => setTimeout(() => resolve(-12), 60))
+
+addTwoPromises(promise1, promise2).then(console.log); 
